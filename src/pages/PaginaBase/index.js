@@ -1,21 +1,21 @@
-import Cabecalho from "componentes/Cabecalho"
-import Container from "componentes/Container"
-import Rodape from "componentes/Rodape"
-import FavoritosProvider from "contextos/Favoritos"
-import { Outlet } from "react-router-dom"
+import Cabecalho from "components/Cabecalho";
+import Container from "components/Container";
+import Rodape from "components/Rodape";
+import FavoritosProvider from "contextos/Favoritos";
+import { Outlet } from "react-router-dom";
 
 function PaginaBase() {
-    return(
+    return (
         <main>
-            <Cabecalho/>
+            <Cabecalho />
             <FavoritosProvider>
                 <Container>
-                    <Outlet/>
+                    <Outlet />
                 </Container>
             </FavoritosProvider>
-            <Rodape/>
+            <Rodape />
         </main>
     )
 }
 
-export default PaginaBase
+export default PaginaBase;
